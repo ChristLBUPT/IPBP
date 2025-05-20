@@ -1,0 +1,12 @@
+OpenELM-3B-biaffine-test total parameters: 3042967524
+Epoch: 4, dev_UAS: 94.493032, dev_LAS: 92.357389
+OpenELM-3B-biaffine-freeze-test total parameters: 3041075172
+Epoch: 8, dev_UAS: 89.144050, dev_LAS: 86.150765
+OpenELM-3B-gcn-freeze-test total parameters: 3089927170
+Epoch: 7, dev_UAS: 90.393838, dev_LAS: 86.339784
+OpenELM-3B-gcn-freeze-test___gcn_attn_only total parameters: 3089927170
+Epoch: 8, dev_UAS: 85.222592, dev_LAS: 77.520736
+OpenELM-3B-gcn-freeze-test___gcn_involve_node_emb total parameters: 3093625370
+Epoch: 8, dev_UAS: 91.271229, dev_LAS: 87.332844
+OpenELM-3B-gcn-freeze-test___gcn_transpose_edge_scores total parameters: 3089927170
+Epoch: 8, dev_UAS: 89.981944, dev_LAS: 86.009705

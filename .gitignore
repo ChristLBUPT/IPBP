@@ -1,0 +1,16 @@
+/data/*clean
+**__pycache__/
+__pycache__/
+/.ipynb_checkpoints/
+/.vscode/
+temp_code/
+/inference_results
+/probability_distributions/
+/visualization_results
+/.DS_Store
+/.rsyncignore
+/rsync.sh
+/requirements.txt
+/out/
+/openai_api/
+/*png

@@ -1,0 +1,3 @@
+{
+    "basic": "The dependency relationship of sentence ```I love deep learning.``` can be described in ```<dependent> -> <head> (<relationship>)``` tuples as follows:\n```I -> love (nsubj), love -> root (root), deep -> learning (amod), learning -> love (obj)```\n The dependency relationship of sentence ```{sent}``` can be described as:\n```"
+}

@@ -1,0 +1,56 @@
+
+In dependency syntactics, for a sentence, each word in this sentence has a dependency head, and a dependency label that describes the relationship between the word and its head. 
+There are following dependency labels defined in dependency syntactics:
+prep: preposition (e.g., "in," "on")
+det: determiner (e.g., "the," "a")
+nn: noun modifying another noun (e.g., "coffee shop")
+num: numeral modifier of a noun (e.g., "three cats")
+pobj: object of a preposition (e.g., "on the table")
+punct: punctuation (e.g., ",", ".")
+poss: possessive modifier (e.g., "John's book")
+possessive: possessive marker (e.g., "'s" in "John's")
+amod: adjective modifying a noun (e.g., "blue car")
+nsubj: nominal subject (e.g., "She runs")
+appos: appositional phrase (e.g., "my friend, John")
+dobj: direct object of a verb (e.g., "I see him")
+dep: unspecified dependent (e.g., "This is so cool")
+cc: coordinating conjunction (e.g., "and," "or")
+conj: conjunct in a list (e.g., "apples and oranges")
+nsubjpass: nominal subject of a passive verb (e.g., "The cake was eaten")
+partmod: participial modifier (e.g., "the running water")
+auxpass: auxiliary verb in a passive construction (e.g., "was" in "was eaten")
+advmod: adverbial modifier (e.g., "quickly ran")
+root: main word of the sentence (e.g., "Runs fast")
+ccomp: clausal complement (e.g., "He said that he is coming")
+aux: auxiliary verb (e.g., "is" in "is running")
+cop: copula or linking verb (e.g., "is" in "She is a teacher")
+xcomp: open clausal complement (e.g., "She wants to leave")
+quantmod: quantifier modifying a noun (e.g., "a lot of water")
+tmod: temporal modifier (e.g., "I left yesterday")
+neg: negation (e.g., "not" in "He is not coming")
+infmod: infinitive verb modifier (e.g., "a book to read")
+rcmod: relative clause modifier (e.g., "the man who left")
+pcomp: complement of a preposition (e.g., "about what happened")
+mark: marker for a subordinate clause (e.g., "if he comes")
+advcl: adverbial clause modifier (e.g., "He left because he was tired")
+predet: word modifying a determiner (e.g., "all the apples")
+csubj: clausal subject (e.g., "What she said is true")
+mwe: multi-word expression (e.g., "in spite of")
+parataxis: loosely connected clauses (e.g., "I came, I saw")
+npadvmod: noun phrase as adverbial modifier (e.g., "He arrived last week")
+number: number modifying a noun (e.g., "twenty cars")
+acomp: adjectival complement (e.g., "She is happy")
+prt: verb particle (e.g., "give up")
+iobj: indirect object (e.g., "He gave me a gift")
+preconj: pre-conjunction (e.g., "either...or")
+expl: expletive (e.g., "There is a problem")
+discourse: discourse element (e.g., "well," "oh")
+csubjpass: clausal subject of a passive verb (e.g., "That she left was unexpected")
+
+For example, in the sentence:
+"While admitting such a move would be `` devastating '' to most creditors , Judge Abramson told a courtroom filled with nearly two dozen attorneys that he was concerned about the toll mounting legal bills will take on Mr. Hunt 's shrinking estate and about the fact that , following voting by creditors , none of the reorganization plans appeared to be viable in their present form . "
+The dependency relationship can be described in "<dependent> -> <head> (<relationship>)" tuples as:
+"While -> admitting (mark), admitting -> told (advcl), such -> move (predet), a -> move (det), move -> devastating (nsubj), would -> devastating (aux), be -> devastating (cop), `` -> devastating (punct), devastating -> admitting (ccomp), '' -> devastating (punct), to -> devastating (prep), most -> creditors (amod), creditors -> to (pobj), , -> told (punct), Judge -> Abramson (nn), Abramson -> told (nsubj), told -> root (root), a -> courtroom (det), courtroom -> told (dobj), filled -> courtroom (partmod), with -> filled (prep), nearly -> dozen (quantmod), two -> dozen (number), dozen -> attorneys (num), attorneys -> with (pobj), that -> concerned (mark), he -> concerned (nsubjpass), was -> concerned (auxpass), concerned -> told (ccomp), about -> concerned (prep), the -> toll (det), toll -> about (pobj), mounting -> bills (amod), legal -> bills (amod), bills -> take (nsubj), will -> take (aux), take -> toll (rcmod), on -> take (prep), Mr. -> Hunt (nn), Hunt -> estate (poss), 's -> Hunt (possessive), shrinking -> estate (nn), estate -> on (dep), and -> about (cc), about -> about (conj), the -> fact (det), fact -> about (pobj), that -> appeared (mark), , -> appeared (punct), following -> appeared (prep), voting -> following (pobj), by -> voting (prep), creditors -> by (pobj), , -> appeared (punct), none -> appeared (nsubj), of -> none (prep), the -> plans (det), reorganization -> plans (nn), plans -> of (pobj), appeared -> fact (ccomp), to -> viable (aux), be -> viable (cop), viable -> appeared (xcomp), in -> viable (prep), their -> form (poss), present -> form (amod), form -> in (pobj), . -> told (punct), "
+In the sentence:
+"{sent}"
+The dependency relationship can be described as:

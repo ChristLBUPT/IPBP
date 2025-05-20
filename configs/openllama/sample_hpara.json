@@ -1,0 +1,22 @@
+{
+    "max_seq_length": 300,
+    "use_bert": false,
+    "use_llm": true,
+    "lora_llm": false,
+    "lora_config": "{}",
+    "use_xlnet": false,
+    "use_zen": false,
+    "do_lower_case": false,
+    "mlp_dropout": 0.33,
+    "n_mlp_arc": 500,
+    "n_mlp_rel": 100,
+    "use_biaffine": false,
+    "use_gcn": true,
+    "gcn_involve_node_emb": false,
+    "gcn_transpose_edge_scores": false,
+    "use_edge_gcn": false,
+    "use_aoa": false,
+    "use_pos": false,
+    "use_encoder": false,
+    "num_layers": 3
+}

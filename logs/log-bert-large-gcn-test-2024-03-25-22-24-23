@@ -1,0 +1,121 @@
+03/25/2024 22:24:23 - INFO - __main__ -   found prevous run logs: ['log-bert-large-gcn-test-2024-03-25-22-23-37'], deleted them
+03/25/2024 22:24:23 - INFO - __main__ -   arguments:
+{
+  "do_train": true,
+  "do_test": false,
+  "train_data_path": "./data/train.conllu",
+  "dev_data_path": "./data/dev.conllu",
+  "test_data_path": null,
+  "brown_data_path": null,
+  "genia_data_path": null,
+  "input_file": null,
+  "output_file": null,
+  "use_bert": true,
+  "use_xlnet": false,
+  "use_zen": false,
+  "bert_model": "../pretrained-models/bert-large-cased",
+  "eval_model": null,
+  "cache_dir": "",
+  "max_seq_length": 300,
+  "max_ngram_size": 128,
+  "do_lower_case": false,
+  "train_batch_size": 16,
+  "eval_batch_size": 16,
+  "word_pair_batch_size": 2048,
+  "learning_rate": 3e-05,
+  "num_train_epochs": 8.0,
+  "warmup_proportion": 0.1,
+  "no_cuda": false,
+  "local_rank": -1,
+  "seed": 42,
+  "gradient_accumulation_steps": 1,
+  "fp16": false,
+  "loss_scale": 0,
+  "server_ip": "",
+  "server_port": "",
+  "rank": 0,
+  "init_method": "tcp://127.0.0.1:23456",
+  "patient": 100,
+  "model_name": "bert-large-gcn-test",
+  "mlp_dropout": 0.33,
+  "n_mlp_arc": 500,
+  "n_mlp_rel": 100,
+  "use_biaffine": false,
+  "dep_model": null,
+  "vanilla": false,
+  "use_pos": false,
+  "use_encoder": false,
+  "num_layers": 3,
+  "data_portion": null,
+  "extract_intermediate_outputs": false,
+  "intermediate_metabatch_size": 32,
+  "debug": null,
+  "sanity_check": false,
+  "profile": null,
+  "use_gcn": true,
+  "gcn_involve_node_emb": true,
+  "random_param_lr": 0.001
+}
+03/25/2024 22:24:23 - INFO - __main__ -   device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+03/25/2024 22:24:25 - INFO - __main__ -   # of word in train: 44389: 
+03/25/2024 22:24:25 - INFO - __main__ -   # of tag types in train: 45: 
+03/25/2024 22:24:25 - INFO - __main__ -   initializing pre-trained BERT from `../pretrained-models/bert-large-cased`
+03/25/2024 22:24:32 - INFO - __main__ -   # of trainable parameters: 325.74M
+03/25/2024 22:24:34 - INFO - __main__ -   random_parameters_percentage: 6.59M(random)/325.74M(total)
+03/25/2024 22:24:34 - INFO - __main__ -   random parameter names: gcn.node_ff.mlp.0.weight, gcn.node_ff.mlp.0.bias, gcn.node_ff.mlp.2.weight, gcn.node_ff.mlp.2.bias, gcn.edge_ff.mlp.0.weight, gcn.edge_ff.mlp.0.bias, gcn.edge_ff.mlp.2.weight, gcn.edge_ff.mlp.2.bias, gcn.node2edge_proj.weight, gcn.node2edge_proj.bias, gcn.edge2node_proj.weight, gcn.edge2node_proj.bias, edge_classifier.weight, edge_classifier.bias, gcn_mlp_arc_h.linear.weight, gcn_mlp_arc_h.linear.bias, gcn_mlp_arc_d.linear.weight, gcn_mlp_arc_d.linear.bias, gcn_mlp_rel_h.linear.weight, gcn_mlp_rel_h.linear.bias, gcn_mlp_rel_d.linear.weight, gcn_mlp_rel_d.linear.bias, rel_classifier_1.weight, rel_classifier_2.weight
+03/25/2024 22:24:34 - INFO - __main__ -   ***** Running training *****
+03/25/2024 22:24:34 - INFO - __main__ -     Num examples = 39832
+03/25/2024 22:24:34 - INFO - __main__ -     Batch size = 16
+03/25/2024 22:24:34 - INFO - __main__ -     Num steps = 19912
+03/25/2024 22:39:51 - INFO - __main__ -   
+
+03/25/2024 22:40:04 - INFO - __main__ -   1: Epoch: dev: UAS:95.89, LAS:93.39
+03/25/2024 22:40:04 - INFO - __main__ -   
+
+03/25/2024 22:55:30 - INFO - __main__ -   
+
+03/25/2024 22:55:43 - INFO - __main__ -   2: Epoch: dev: UAS:96.19, LAS:94.26
+03/25/2024 22:55:43 - INFO - __main__ -   
+
+03/25/2024 23:11:07 - INFO - __main__ -   
+
+03/25/2024 23:11:20 - INFO - __main__ -   3: Epoch: dev: UAS:96.27, LAS:94.51
+03/25/2024 23:11:20 - INFO - __main__ -   
+
+03/25/2024 23:26:45 - INFO - __main__ -   
+
+03/25/2024 23:26:58 - INFO - __main__ -   4: Epoch: dev: UAS:96.31, LAS:94.54
+03/25/2024 23:26:58 - INFO - __main__ -   
+
+03/25/2024 23:42:24 - INFO - __main__ -   
+
+03/25/2024 23:42:37 - INFO - __main__ -   5: Epoch: dev: UAS:96.36, LAS:94.65
+03/25/2024 23:42:37 - INFO - __main__ -   
+
+03/25/2024 23:58:02 - INFO - __main__ -   
+
+03/25/2024 23:58:15 - INFO - __main__ -   6: Epoch: dev: UAS:96.33, LAS:94.65
+03/25/2024 23:58:15 - INFO - __main__ -   
+
+03/26/2024 00:13:28 - INFO - __main__ -   
+
+03/26/2024 00:13:41 - INFO - __main__ -   7: Epoch: dev: UAS:96.39, LAS:94.62
+03/26/2024 00:13:41 - INFO - __main__ -   
+
+03/26/2024 00:28:51 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:52 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:52 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:52 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:53 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:53 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:54 - WARNING - modules.optimization -   Training beyond specified 't_total'. Learning rate multiplier set to 0.0. Please set 't_total' of WarmupLinearSchedule correctly.
+03/26/2024 00:28:54 - INFO - __main__ -   
+
+03/26/2024 00:29:07 - INFO - __main__ -   8: Epoch: dev: UAS:96.39, LAS:94.72
+03/26/2024 00:29:07 - INFO - __main__ -   
+
+03/26/2024 00:29:20 - INFO - __main__ -   
+=======best las========
+03/26/2024 00:29:20 - INFO - __main__ -   Epoch: 8, dev_UAS: 96.386052, dev_LAS: 94.724369
+03/26/2024 00:29:20 - INFO - __main__ -   
+=======best las========

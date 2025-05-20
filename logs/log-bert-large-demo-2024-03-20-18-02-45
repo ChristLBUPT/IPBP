@@ -1,0 +1,60 @@
+03/20/2024 18:02:45 - INFO - __main__ -   found prevous run logs: ['log-bert-large-demo-2024-03-20-17-58-31'], deleted them
+03/20/2024 18:02:45 - INFO - __main__ -   arguments:
+do_train: True
+  do_test: False
+  train_data_path: ./data/train.conllu
+  dev_data_path: ./data/dev.conllu
+  test_data_path: None
+  brown_data_path: None
+  genia_data_path: None
+  input_file: None
+  output_file: None
+  use_bert: True
+  use_xlnet: False
+  use_zen: False
+  bert_model: ../pretrained-models/bert-large-cased
+  eval_model: None
+  cache_dir: 
+  max_seq_length: 300
+  max_ngram_size: 128
+  do_lower_case: False
+  train_batch_size: 16
+  eval_batch_size: 16
+  word_pair_batch_size: 2048
+  learning_rate: 3e-05
+  num_train_epochs: 8.0
+  warmup_proportion: 0.1
+  no_cuda: False
+  local_rank: -1
+  seed: 42
+  gradient_accumulation_steps: 1
+  fp16: False
+  loss_scale: 0
+  server_ip: 
+  server_port: 
+  rank: 0
+  init_method: tcp://127.0.0.1:23456
+  patient: 100
+  model_name: bert-large-demo
+  mlp_dropout: 0.33
+  n_mlp_arc: 500
+  n_mlp_rel: 100
+  use_biaffine: True
+  dep_model: None
+  vanilla: False
+  use_pos: False
+  use_encoder: False
+  num_layers: 3
+  data_portion: None
+  extract_intermediate_outputs: True
+  intermediate_metabatch_size: 32
+  debug: None
+03/20/2024 18:02:45 - INFO - __main__ -   device: cuda n_gpu: 2, distributed training: False, 16-bits training: False
+03/20/2024 18:02:47 - INFO - __main__ -   # of word in train: 44389: 
+03/20/2024 18:02:48 - INFO - __main__ -   # of tag types in train: 45: 
+03/20/2024 18:02:48 - INFO - __main__ -   initializing pre-trained BERT from `../pretrained-models/bert-large-cased`
+03/20/2024 18:02:56 - INFO - __main__ -   # of trainable parameters: 335559613
+03/20/2024 18:02:58 - INFO - __main__ -   ***** Running training *****
+03/20/2024 18:02:58 - INFO - __main__ -     Num examples = 39832
+03/20/2024 18:02:58 - INFO - __main__ -     Batch size = 16
+03/20/2024 18:02:58 - INFO - __main__ -     Num steps = 19912
